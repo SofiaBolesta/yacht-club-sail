@@ -1,0 +1,135 @@
+.preview {
+  width: 100%;
+  padding: 60px 98px;
+}
+
+.preview__wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.preview__event {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.preview__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 10px;
+  margin: 0 0 0 70px;
+  align-self: center;
+}
+
+.preview__content h3 {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'NotoSans-SemiBold', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color: #163152;
+  margin: 0 0 10px;
+  min-height: 49px;
+
+  &:after {
+    content: '';
+    background-color: #00c6bd;
+    width: 130px;
+    height: 2px;
+  }
+}
+
+.preview__content p {
+  order: 3;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283C54;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: minmax(auto, 321px) auto;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.preview__content span {
+  order: 1;
+  font-family: 'NotoSans-SemiBold', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #163152;
+}
+
+.preview__content a {
+  order: 3;
+  grid-row: 1/-1;
+  grid-column: 2;
+  align-self: center;
+}
+
+.preview__button {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  border: 1px solid #163152;
+  border-radius: 50%;
+}
+
+.preview__button svg {
+  stroke: #163152;
+  position: absolute;
+  top: 37%;
+  left: 27%;
+}
+
+.preview__event--membership img {
+  max-width: 600px;
+}
+
+.preview__event--children-walk .preview__content {
+  order: 2;
+  margin: 0 70px 0 0;
+}
+
+.preview__event--children-walk img {
+  order: 1;
+  max-width: 500px;
+}
+
+.preview__event--children-walk h3 {
+  text-align: right;
+  align-self: end;
+
+  &:after {
+    margin: 0 0 0 auto;
+  }
+}
+
+.preview__event--children-walk span {
+  text-align: end;
+}
+
+.preview__event--children-walk p {
+  text-align: end;
+  gap: 20px;
+  grid-template-columns: auto minmax(auto, 372px);
+}
+
+.preview__event--children-walk svg {
+  transform: rotateY(180deg);
+}
+
+.preview__event--children-walk a  {
+  grid-row: 1/-1;
+  grid-column: 1;
+}

@@ -1,7 +1,7 @@
 // Vendor
 // ---------------------------------
 
-@import "vendor/normalize.scss";
+@import "vender/normalize";
 // Swiper 7.4.1
 @import "vender/swiper";
 
@@ -14,6 +14,7 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/title";
 
 // Blocks
 // ---------------------------------
@@ -23,6 +24,17 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/index/header/header";
+@import "blocks/index/main/promo";
+@import "blocks/index/main/preview";
+@import "blocks/index/main/features";
+@import "blocks/index/main/gallery";
+@import "blocks/index/main/advantages";
+@import "blocks/index/main/news";
+@import "blocks/index/main/competitions";
+@import "blocks/index/main/form";
+@import "blocks/index/main/contacts";
+@import "blocks/index/footer/footer";
 
 // ---------------------------------
 

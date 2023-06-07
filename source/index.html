@@ -7,46 +7,52 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Яхт-клуб Парус">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/NotoSans-Italic.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/NotoSans-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/NotoSans-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/NotoSans-SemiBold.woff2" as="font" crossorigin="anonymous">
   <title>Яхт-клуб "Парус"</title>
 </head>
 <body>
   <div class="wrapper">
     <header>
-      <div class="header header__wrapper">
-        <a href="#" class="header__logo logo">
-          <picture class="header__picture picture">
-            <img src="img/svg/logotype-header.svg" width="64" height="68" alt="Логотип компании Яхт-клуба Парус">
-          </picture>
-        </a>
-        <nav class="header__menu">
-          <ul class="header__list">
-            <li class="header__item">
-              <a href="#" class="header__link">Наш клуб</a>
-            </li>
-            <li class="header__item">
-              <a href="#" class="header__link">Регаты</a>
-            </li>
-            <li class="header__item">
-              <a href="#" class="header__link">Команда</a>
-            </li>
-            <li class="header__item">
-              <a href="#" class="header__link">Обучение</a>
-            </li>
-            <li class="header__item">
-              <a href="news.html" class="header__link">новости</a>
-            </li>
-            <li class="header__item">
-              <a href="#" class="header__link">Контакты</a>
-            </li>
-            <li class="header__item">
-              <a href="#" class="header__link header__link--account">
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none">
-                  <path fill="#163152" d="M17.98 0a17.98 17.98 0 0 0-16.8 11.59 18.04 18.04 0 0 0 4.8 19.85l.27.23.14.1c.32.28.65.54 1 .8l.27.2c.36.25.75.49 1.12.74l.19.12a17.54 17.54 0 0 0 4.22 1.77h.05c.48.13.97.25 1.5.34h.14c.48.08.96.15 1.45.2h.17c.5.04 1 .06 1.5.06s1 0 1.5-.07h.16c.5-.04.98-.11 1.46-.2h.13c.5-.08 1-.2 1.5-.33h.06a17.88 17.88 0 0 0 4.22-1.77l.19-.12c.38-.22.75-.47 1.11-.75l.28-.2c.35-.25.68-.51 1-.79l.14-.1.26-.23A18.03 18.03 0 0 0 17.98 0Zm0 18.02a6 6 0 0 1-4.24-10.25 6 6 0 1 1 4.24 10.25Zm2.25 1.5a8.24 8.24 0 0 1 8.25 8.26v3l-.1.08c-.29.24-.6.48-.9.7l-.21.14c-.33.23-.68.44-1.03.64l-.2.12c-.36.2-.74.4-1.11.57l-.12.01c-1.25.57-2.57.97-3.92 1.22h-.12c-.42.07-.86.13-1.29.17h-.18c-.44 0-.87.06-1.32.06-.44 0-.87 0-1.32-.06h-.18c-.42 0-.86-.09-1.28-.16h-.13a16.18 16.18 0 0 1-3.9-1.23h-.13c-.38-.18-.75-.37-1.12-.58l-.19-.17c-.35-.2-.7-.41-1.02-.65l-.22-.1c-.3-.23-.62-.45-.9-.7l-.1-.05v-3a8.27 8.27 0 0 1 8.24-8.27h4.5Zm9.75 9.83v-1.57a9.77 9.77 0 0 0-7.78-9.56 7.5 7.5 0 1 0-8.43 0 9.75 9.75 0 0 0-7.79 9.56v1.57a16.53 16.53 0 0 1 12-27.86 16.49 16.49 0 0 1 16.25 19.39 16.53 16.53 0 0 1-4.25 8.47Z"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <div class="header">
+        <div class="header__wrapper">
+          <a href="#" class="header__logo logo">
+            <picture class="header__picture picture">
+              <img src="img/svg/logotype-header.svg" width="64" height="68" alt="Логотип компании Яхт-клуба Парус">
+            </picture>
+          </a>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__link">Наш клуб</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Регаты</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Команда</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Обучение</a>
+              </li>
+              <li class="header__item">
+                <a href="news.html" class="header__link">новости</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Контакты</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link header__link--account">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none">
+                    <path fill="#163152" d="M17.98 0a17.98 17.98 0 0 0-16.8 11.59 18.04 18.04 0 0 0 4.8 19.85l.27.23.14.1c.32.28.65.54 1 .8l.27.2c.36.25.75.49 1.12.74l.19.12a17.54 17.54 0 0 0 4.22 1.77h.05c.48.13.97.25 1.5.34h.14c.48.08.96.15 1.45.2h.17c.5.04 1 .06 1.5.06s1 0 1.5-.07h.16c.5-.04.98-.11 1.46-.2h.13c.5-.08 1-.2 1.5-.33h.06a17.88 17.88 0 0 0 4.22-1.77l.19-.12c.38-.22.75-.47 1.11-.75l.28-.2c.35-.25.68-.51 1-.79l.14-.1.26-.23A18.03 18.03 0 0 0 17.98 0Zm0 18.02a6 6 0 0 1-4.24-10.25 6 6 0 1 1 4.24 10.25Zm2.25 1.5a8.24 8.24 0 0 1 8.25 8.26v3l-.1.08c-.29.24-.6.48-.9.7l-.21.14c-.33.23-.68.44-1.03.64l-.2.12c-.36.2-.74.4-1.11.57l-.12.01c-1.25.57-2.57.97-3.92 1.22h-.12c-.42.07-.86.13-1.29.17h-.18c-.44 0-.87.06-1.32.06-.44 0-.87 0-1.32-.06h-.18c-.42 0-.86-.09-1.28-.16h-.13a16.18 16.18 0 0 1-3.9-1.23h-.13c-.38-.18-.75-.37-1.12-.58l-.19-.17c-.35-.2-.7-.41-1.02-.65l-.22-.1c-.3-.23-.62-.45-.9-.7l-.1-.05v-3a8.27 8.27 0 0 1 8.24-8.27h4.5Zm9.75 9.83v-1.57a9.77 9.77 0 0 0-7.78-9.56 7.5 7.5 0 1 0-8.43 0 9.75 9.75 0 0 0-7.79 9.56v1.57a16.53 16.53 0 0 1 12-27.86 16.49 16.49 0 0 1 16.25 19.39 16.53 16.53 0 0 1-4.25 8.47Z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -67,13 +73,13 @@
                 </picture>
               </div>
               <div class="promo__slide swiper-slide">
-                <picture class="promo__picture picture">
+                <picture class="promo__picture promo__picture--middle">
                   <img src="img/index/promo/sailing-yacht-glides@1x.jpg" srcset="img/index/promo/sailing-yacht-glides@2x.jpg" width="4096" height="2341" alt="Фотография парусной яхты в море">
                 </picture>
-                <a class="promo__link" href="https://ru.freepik.com/free-photo/sailboat-silhouette-glides-on-tranquil-sunset-waters-generated-by-ai_41318297.htm#query=%D1%8F%D1%85%D1%82%D0%B0&position=0&from_view=keyword&track=sph">Изображение от vecstock на Freepik</a>
+                <a href="https://ru.freepik.com/free-photo/sailboat-silhouette-glides-on-tranquil-sunset-waters-generated-by-ai_41318297.htm#query=%D1%8F%D1%85%D1%82%D0%B0&position=0&from_view=keyword&track=sph">Изображение от vecstock на Freepik</a>
               </div>
               <div class="promo__slide swiper-slide">
-                <picture class="promo__picture picture">
+                <picture class="promo__picture promo__picture--last">
                   <img src="img/index/promo/boat-in-huangpu-river@1x.jpg" srcset="img/index/promo/boat-in-huangpu-river@2x.jpg" width="4096" height="2726" alt="Фотография парусной яхты в море">
                 </picture>
                 <a href="https://ru.freepik.com/free-photo/boat-in-huangpu-river-with-shanghai-urban-architecture_26768190.htm#query=%D1%8F%D1%85%D1%82%D0%B0&position=11&from_view=keyword&track=sph">Изображение от TravelScape на Freepik</a>
@@ -82,7 +88,6 @@
             <div class="promo__swiper-button-prev swiper-button-prev"></div>
             <div class="promo__swiper-button-next swiper-button-next"></div>
           </div>
-
           <aside class="promo__aside">
             <ul class="promo__list">
               <li class="promo__item">
@@ -93,6 +98,14 @@
               </li>
             </ul>
           </aside>
+          <button type="button" class="promo__button-more">
+            <span class="promo__button-text">смотреть далее</span>
+            <span class="promo__container-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 14" width="25" height="14" aria-hidden="true" focusable="false">
+                <path d="M0 7h24m0 0-6.32-6M24 7l-6.32 6"/>
+              </svg>
+            </span>
+          </button>
         </div>
       </section>
       <section class="preview">
@@ -100,32 +113,34 @@
           <div class="preview__event preview__event--membership">
             <div class="preview__content">
               <h3>Стань частью команды</h3>
-              <p>Хотите попробовать себя в яхтинге? Наш клуб готов стать их воротами в морскую культуру!</p>
               <span><time datetime="2020-10-20">20 октября</time> - <time datetime="2020-04-19">19 апреля</time></span>
+              <p>Хотите попробовать себя в яхтинге? Наш клуб готов стать их воротами в морскую культуру!
+                <a href="#" class="preview__button">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 14" width="25" height="14" aria-hidden="true" focusable="false">
+                    <path d="M0 7h24m0 0-6.32-6M24 7l-6.32 6"/>
+                  </svg>
+                </a>
+              </p>
             </div>
             <picture class="preview__picture picture">
               <img src="img/index/preview/preview-photo1@1x.jpg" srcset="img/index/preview/preview-photo1@2x.jpg" width="600" height="262" alt="Фотография человека на яхте">
             </picture>
-            <a href="#" class="preview__button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="14" fill="none">
-                <path stroke="#163152" d="M0 7h24m0 0-6.32-6M24 7l-6.32 6"/>
-              </svg>
-            </a>
           </div>
           <div class="preview__event preview__event--children-walk">
             <div class="preview__content">
               <h3>Рожденные в воде</h3>
-              <p>Подарите вашим детям чувство свободы, независимости, а также вкус жизни. Мир ярких эмоций и неописуемых ощущений!</p>
               <span><time datetime="2020-10-26">26 октября</time> - <time datetime="2020-03-31">31 марта</time></span>
+              <p>Подарите вашим детям чувство свободы, независимости, а также вкус жизни. Мир ярких эмоций и неописуемых ощущений!
+                <a href="#" class="preview__button">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 14" width="25" height="14" aria-hidden="true" focusable="false">
+                    <path d="M0 7h24m0 0-6.32-6M24 7l-6.32 6"/>
+                  </svg>
+                </a>
+              </p>
             </div>
             <picture class="preview__picture picture">
               <img src="img/index/preview/preview-photo2@1x.jpg" srcset="img/index/preview/preview-photo2@2x.jpg" width="500" height="252" alt="Фотография детей на яхте">
             </picture>
-            <a href="#" class="preview__button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="14" fill="none">
-                <path stroke="#163152" d="M0 7h24m0 0-6.32-6M24 7l-6.32 6"/>
-              </svg>
-            </a>
           </div>
         </div>
       </section>
@@ -137,7 +152,7 @@
               <a href="#" class="features__link">
                 <h3>Катер Meridian 401</h3>
                 <p>Яхта 401 длиной 12.5 метров и шириной 4.2 метра, вместимостью 11 человек</p>
-                <ul>
+                <ul class="features__card-list">
                   <li>2 каюты</li>
                   <li>4 спальных места</li>
                   <li>аудиосистема, кондиционер</li>
@@ -147,13 +162,17 @@
                 <picture class="features__picture picture">
                   <img src="img/index/features/yacht1@1x.jpg" srcset="img/index/features/yacht1@2x.jpg" alt="Фотография Катера Meridian 401">
                 </picture>
+                <p class="feature__container-price">
+                  <span>Цена:</span>
+                  <span>14 000 ₽/час</span>
+                </p>
               </a>
             </li>
             <li class="features__item">
               <a href="#" class="features__link">
                 <h3>Катер 60 Manhattan</h3>
                 <p>Двухпалубное судно VIP уровня длиной 20 метров, вместимостью 10 человек</p>
-                <ul>
+                <ul class="features__card-list">
                   <li>6 кают</li>
                   <li>носовая часть с огромной подушкой</li>
                   <li>просторный флайбридж</li>
@@ -163,13 +182,17 @@
                 <picture class="features__picture picture">
                   <img src="img/index/features/yacht2@1x.jpg" srcset="img/index/features/yacht2@2x.jpg" alt="Фотография Катера 60 Manhattan">
                 </picture>
+                <p class="feature__container-price">
+                  <span>Цена:</span>
+                  <span>25 000 ₽/час</span>
+                </p>
               </a>
             </li>
             <li class="features__item">
               <a href="#" class="features__link">
                 <h3>Катер Starfisher 34</h3>
                 <p>Яхта 401 длиной 12.5 метров и шириной 4.2 метра, вместимостью 11 человек</p>
-                <ul>
+                <ul class="features__card-list">
                   <li>4 каюты</li>
                   <li>6 спальных места</li>
                   <li>аудиосистема, кондиционер</li>
@@ -179,6 +202,10 @@
                 <picture class="features__picture picture">
                   <img src="img/index/features/yacht3@1x.jpg" srcset="img/index/features/yacht3@2x.jpg" alt="Фотография Катера Starfisher 34">
                 </picture>
+                <p class="feature__container-price">
+                  <span>Цена:</span>
+                  <span>18 000 ₽/час</span>
+                </p>
               </a>
             </li>
           </ul>
@@ -193,17 +220,36 @@
                 <picture class="gallery__picture picture">
                   <img src="img/index/gallery/gallery-photo1@1x.jpg" srcset="img/index/gallery/gallery-photo1@2x.jpg" width="630" height="360" alt="Видео яхты">
                 </picture>
+                <div class="gallery__shadow"></div>
                 <button type="button" class="gallery__button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" fill="none">
-                    <path fill="#00C6BD" d="M16 12 0 0v24l16-12Z"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 24" width="16" height="24" aria-hidden="true" focusable="false">
+                    <path d="M16 12 0 0v24l16-12Z"/>
                   </svg>
                 </button>
               </div>
-              <div class="gallery__slide swiper-slide">Slide 2</div>
-              <div class="gallery__slide swiper-slide">Slide 3</div>
+              <div class="gallery__slide swiper-slide">
+                <picture class="gallery__picture picture">
+                  <img src="img/index/gallery/gallery-photo3@1x.jpg" srcset="img/index/gallery/gallery-photo3@2x.jpg" width="400" height="265" alt="Видео яхты">
+                </picture>
+                <div class="gallery__shadow"></div>
+                <button type="button" class="gallery__button">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 24" width="16" height="24" aria-hidden="true" focusable="false">
+                    <path d="M16 12 0 0v24l16-12Z"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="gallery__slide swiper-slide">
+                <picture class="gallery__picture picture">
+                  <img src="img/index/gallery/gallery-photo2@1x.jpg" srcset="img/index/gallery/gallery-photo2@2x.jpg" width="400" height="265" alt="Видео яхты">
+                </picture>
+                <div class="gallery__shadow"></div>
+                <button type="button" class="gallery__button">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 24" width="16" height="24" aria-hidden="true" focusable="false">
+                    <path d="M16 12 0 0v24l16-12Z"/>
+                  </svg>
+                </button>
+              </div>
             </div>
-            <div class="gallery__swiper-button-prev swiper-button-prev"></div>
-            <div class="gallery__swiper-button-next swiper-button-next"></div>
           </div>
         </div>
       </section>
@@ -351,42 +397,42 @@
               <col class="category">
               <col class="place">
             </colgroup>
-            <tr>
+            <tr class="competitions__tablet-title">
               <th>Название соревнования</th>
               <th>Даты проведения</th>
               <th>Участвующие классы</th>
               <th>Категория</th>
               <th>Место проведения</th>
             </tr>
-            <tr>
+            <tr class="competitions__tablet-title">
               <td>Кубок Сибири</td>
               <td>10-15 января</td>
               <td>Буер Ледовый оптимист</td>
               <td>БУЕР</td>
               <td>г. Новосибирск</td>
             </tr>
-            <tr>
+            <tr class="competitions__tablet-title">
               <td>Черноморская регата</td>
               <td>12-18 января</td>
               <td>29-й, 420, 49-й FX, RS:X</td>
               <td>Гонки флота</td>
               <td>г. Сочи</td>
             </tr>
-            <tr>
+            <tr class="competitions__tablet-title">
               <td>Первенство России</td>
               <td>19-23 января</td>
               <td>Кайтбординг курс-рейс</td>
               <td>Кайтбординг</td>
               <td>г. Тольятти</td>
             </tr>
-            <tr>
+            <tr class="competitions__tablet-title">
               <td>Sailing League</td>
               <td>20-22 января</td>
               <td>J70</td>
               <td>Гонки флота</td>
               <td>г. Санкт-Петербург</td>
             </tr>
-            <tr>
+            <tr class="competitions__tablet-title">
               <td>Первенство класса</td>
               <td>25-29 января</td>
               <td>РУЯ: M</td>
@@ -398,9 +444,9 @@
       </section>
       <section class="form">
         <div class="form__wrapper">
-          <h2 class="form__title title">Станьте участником регаты Sochi Race Week 2021</h2>
-          <p class="form__description">Заполните форму ниже и мы свяжемся с вами в ближайшее время</p>
           <div class="form__component" data-form-validate data-callback="base">
+            <h2 class="form__title title">Станьте участником регаты Sochi Race Week 2021</h2>
+            <p class="form__description">Заполните форму ниже и мы свяжемся с вами в ближайшее время</p>
             <form class="form__question" action="https://echo.htmlacademy.ru/" method="post">
               <label class="form__label form__label--name" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required> Имя
                 <input class="input" type="text" name="name" placeholder="Сергей" required>
@@ -416,14 +462,12 @@
                 <span class="form__style"></span>
                 <span class="form__text">Я даю согласие на обработку персональных данных</span>
               </label>
-              <div class="form__container-button">
-                <button type="submit" class="form__button">отправить</button>
-              </div>
+              <button type="submit" class="form__button">отправить</button>
             </form>
-            <picture class="form__picture picture">
-              <img src="img/index/form/photo-form@1x.jpg" srcset="img/index/form/photo-form@2x.jpg" width="600" height="567" alt="Фотография порта с яхтами">
-            </picture>
           </div>
+          <picture class="form__picture picture">
+            <img src="img/index/form/photo-form@1x.jpg" srcset="img/index/form/photo-form@2x.jpg" width="600" height="567" alt="Фотография порта с яхтами">
+          </picture>
         </div>
       </section>
       <section class="contacts">
@@ -447,7 +491,7 @@
               <ul class="contacts__social-list">
                 <li class="contacts__item">
                   <p class="visually-hidden">facebook</p>
-                  <a href="#" class="social__link">
+                  <a href="#" class="contacts__link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" fill="none">
                       <path fill="#163152" d="M5.14 6.22H9L8.57 8H5.14v8H3.43V8H0V6.22h3.43V4.56c0-1.59.16-2.16.46-2.74.29-.57.74-1.04 1.3-1.35C5.73.17 6.28 0 7.81 0c.45 0 .84.04 1.18.13v1.65H7.82c-1.13 0-1.48.07-1.83.26-.26.15-.45.35-.6.62-.18.36-.25.72-.25 1.9v1.66Z"/>
                     </svg>
@@ -455,7 +499,7 @@
                 </li>
                 <li class="contacts__item">
                   <p class="visually-hidden">twitter</p>
-                  <a href="#" class="social__link">
+                  <a href="#" class="contacts__link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none">
                       <path fill="#163152" d="M12.48 1.92c-.68 0-1.34.29-1.83.8-.48.51-.76 1.21-.77 1.94l-.03 1.51a.61.61 0 0 1-.19.43.5.5 0 0 1-.42.13l-1.4-.2a10.22 10.22 0 0 1-5.3-2.69c-.54 3.18.5 5.39 3.03 7.09l1.57 1.05c.07.05.14.12.18.2a.6.6 0 0 1-.15.76l-1.43 1.11c.85.06 1.66.02 2.33-.12 4.23-.9 7.05-4.32 7.05-9.95 0-.46-.91-2.06-2.64-2.06Zm-4.4 2.7c.02-.92.29-1.82.78-2.59a4.47 4.47 0 0 1 1.98-1.7c.8-.34 1.69-.42 2.53-.23.85.19 1.63.64 2.24 1.3.63 0 1.18.17 2.39-.62-.3 1.58-.45 2.26-1.09 3.2 0 7.35-4.21 10.92-8.5 11.83-2.92.63-7.19-.4-8.41-1.77.62-.05 3.15-.34 4.62-1.49C3.38 11.68-1.55 8.57 1.69.23c1.52 1.9 3.06 3.2 4.62 3.88 1.04.45 1.3.45 1.77.52Z"/>
                     </svg>
@@ -463,7 +507,7 @@
                 </li>
                 <li class="contacts__item">
                   <p class="visually-hidden">instagram</p>
-                  <a href="#" class="social__link">
+                  <a href="#" class="contacts__link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
                       <path fill="#163152" d="M9 6.3a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm0-1.8a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm5.85-.22a1.12 1.12 0 1 1-2.25 0 1.12 1.12 0 0 1 2.25 0ZM9 1.8c-2.23 0-2.59 0-3.63.05-.7.04-1.18.13-1.61.3-.4.15-.68.33-.98.63-.28.28-.5.6-.63.98-.17.44-.27.9-.3 1.61-.04 1-.05 1.34-.05 3.63 0 2.23 0 2.59.05 3.63.04.7.13 1.18.3 1.61.15.4.33.68.63.98.3.3.59.48.97.63.45.17.92.27 1.62.3 1 .04 1.34.05 3.63.05 2.23 0 2.59 0 3.63-.05.7-.04 1.17-.13 1.61-.3.4-.15.68-.33.98-.63.3-.3.48-.59.63-.97.17-.45.27-.92.3-1.62.04-1 .05-1.34.05-3.63 0-2.23 0-2.59-.05-3.63a4.9 4.9 0 0 0-.3-1.61c-.14-.37-.35-.7-.63-.98a2.6 2.6 0 0 0-.98-.63 4.89 4.89 0 0 0-1.61-.3c-1-.04-1.34-.05-3.63-.05ZM9 0c2.45 0 2.75 0 3.71.05s1.61.2 2.18.42c.6.23 1.1.54 1.6 1.04.46.45.81 1 1.04 1.6.22.57.37 1.22.42 2.18.04.96.05 1.26.05 3.71s0 2.75-.05 3.71-.2 1.61-.42 2.18a4.4 4.4 0 0 1-1.04 1.6c-.45.46-1 .81-1.6 1.04-.57.22-1.22.37-2.18.42-.96.04-1.26.05-3.71.05s-2.75 0-3.71-.05a6.65 6.65 0 0 1-2.19-.42 4.4 4.4 0 0 1-1.59-1.04c-.46-.45-.81-1-1.04-1.6a6.63 6.63 0 0 1-.42-2.18C.01 11.75 0 11.45 0 9s0-2.75.05-3.71.2-1.61.42-2.19a4.4 4.4 0 0 1 1.04-1.59c.45-.46 1-.81 1.6-1.04A6.63 6.63 0 0 1 5.29.05C6.25.01 6.55 0 9 0Z"/>
                     </svg>
@@ -484,105 +528,107 @@
       </section>
     </main>
     <footer>
-      <div class="footer footer__wrapper">
-        <a href="" class="footer__log">
-          <picture class="footer__picture picture">
-            <img src="img/svg/logotype-footer.svg" width="100" height="106" alt="Логотип компании Яхт-клуба Парус">
-          </picture>
-        </a>
-        <dl class="footer__menu-list">
-          <div>
-            <dt>Компания</dt>
-            <dd>
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a href="#">О нас</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Команда</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Новости</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Блог</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Галерея</a>
-                </li>
-              </ul>
-            </dd>
+      <div class="footer">
+        <div class="footer__wrapper">
+          <a href="" class="footer__log">
+            <picture class="footer__picture picture">
+              <img src="img/svg/logotype-footer.svg" width="100" height="106" alt="Логотип компании Яхт-клуба Парус">
+            </picture>
+          </a>
+          <dl class="footer__menu-list">
+            <div>
+              <dt>Компания</dt>
+              <dd>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#">О нас</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Команда</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Новости</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Блог</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Галерея</a>
+                  </li>
+                </ul>
+              </dd>
+            </div>
+            <div>
+              <dt>Яхт-клуб</dt>
+              <dd>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#">Правила</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Стоимость</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Анкета</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">FAQ</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Партнеры</a>
+                  </li>
+                </ul>
+              </dd>
+            </div>
+            <div>
+              <dt>Услуги</dt>
+              <dd>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#">Аренда яхты</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Свадьба на яхте</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">День рождения</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Бизнес-встречи</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Прогулки</a>
+                  </li>
+                </ul>
+              </dd>
+            </div>
+            <div>
+              <dt>Регаты</dt>
+              <dd>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#">Корпоративные регаты</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Календарь мероприятий</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Стать участником</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Результаты регат</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Обучение</a>
+                  </li>
+                </ul>
+              </dd>
+            </div>
+          </dl>
+          <div class="footer__copyright">
+            <a href="#">Политика конфиденциальности</a>
+            <p>Яхтклуб ©2020 Все права защищены</p>
           </div>
-          <div>
-            <dt>Яхт-клуб</dt>
-            <dd>
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a href="#">Правила</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Стоимость</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Анкета</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">FAQ</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Партнеры</a>
-                </li>
-              </ul>
-            </dd>
-          </div>
-          <div>
-            <dt>Услуги</dt>
-            <dd>
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a href="#">Аренда яхты</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Свадьба на яхте</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">День рождения</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Бизнес-встречи</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Прогулки</a>
-                </li>
-              </ul>
-            </dd>
-          </div>
-          <div>
-            <dt>Регаты</dt>
-            <dd>
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a href="#">Корпоративные регаты</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Календарь мероприятий</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Стать участником</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Результаты регат</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Обучение</a>
-                </li>
-              </ul>
-            </dd>
-          </div>
-        </dl>
-        <div class="footer__copyright">
-          <a href="#">Политика конфиденциальности</a>
-          <p>Яхтклуб ©2020 Все права защищены</p>
         </div>
       </div>
     </footer>

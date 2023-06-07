@@ -7,10 +7,18 @@ export const initGallerySwiper = () => {
         new Swiper('.gallery__swiper', {
           direction: 'horizontal',
           loop: true,
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 270,
+            depth: 200,
+            modifier: 1,
+            slideShadows: false,
           },
+          spaceBetween: 10,
           mousewheel: false,
           keyboard: true,
           allowSlideNext: true,

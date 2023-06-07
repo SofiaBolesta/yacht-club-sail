@@ -1,0 +1,60 @@
+.competitions {
+  width: 100%;
+  padding: 60px 40px;
+}
+
+.competitions__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.competitions__title {
+  align-items: inherit;
+
+  &:after {
+    width: 370px;
+  }
+}
+
+.competitions__tablet {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.competitions__tablet th {
+  padding: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #163152;
+  text-align: left;
+  vertical-align: top;
+}
+
+.competitions__tablet tr:nth-child(even) {
+  background-color: #f5f5f7;
+}
+
+.competitions__tablet .name {
+  max-width: 285px;
+}
+
+.competitions__tablet .date {
+  max-width: 230px;
+}
+
+.competitions__tablet .member {
+  max-width: 275px;
+}
+
+.competitions__tablet .category {
+  max-width: 185px;
+}
+
+.competitions__tablet td {
+  padding: 17px 20px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283c54;
+}
