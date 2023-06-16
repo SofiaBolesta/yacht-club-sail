@@ -11,7 +11,7 @@
 .competitions__title {
   align-items: inherit;
 
-  &:after {
+  &::after {
     width: 370px;
   }
 }

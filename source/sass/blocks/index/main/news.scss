@@ -9,7 +9,7 @@
 }
 
 .news__title {
-  &:after {
+  &::after {
     width: 110px;
   }
 }
@@ -40,7 +40,7 @@
 .news__item h3 {
   order: 2;
   padding: 0 40px;
-  font-family: 'NotoSans-SemiBold', 'Arial', sans-serif;
+  font-family: "NotoSans-SemiBold", "Arial", sans-serif;
   font-weight: 600;
   font-size: 22px;
   line-height: 30px;
@@ -73,7 +73,7 @@
 }
 
 .news__item figcaption {
-  font-family: 'NotoSans-SemiBold', 'Arial', sans-serif;
+  font-family: "NotoSans-SemiBold", "Arial", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -98,6 +98,7 @@
 
 .news__item:not(:first-child) .news__author {
   padding: 0 20px 20px;
+  grid-template-columns: 37px repeat(2, auto);
 }
 
 .news__author h4 {
@@ -127,10 +128,6 @@
   overflow: hidden;
   border-radius: 50%;
   align-self: center;
-}
-
-.news__item:not(:first-child) .news__author {
-  grid-template-columns: 37px repeat(2, auto);
 }
 
 .news__item:not(:first-child) .news__author-picture {

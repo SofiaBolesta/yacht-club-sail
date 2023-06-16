@@ -13,7 +13,7 @@
 
 .promo__title,
 .promo__subtitle {
-  font-family: 'NotoSans-italic', 'Arial', sans-serif;
+  font-family: "NotoSans-italic", "Arial", sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 44px;
@@ -66,7 +66,7 @@
   bottom: 0;
   color: #ffffff;
   font-size: 14px;
-  font-family: 'NotoSans-italic', 'Arial', sans-serif;
+  font-family: "NotoSans-italic", "Arial", sans-serif;
 }
 
 .promo__swiper-button-next,
@@ -76,7 +76,7 @@
   height: 76px;
   background-color: #ffffff;
 
-  &:after {
+  &::after {
     font-size: 25px;
     color: #163152;
   }
@@ -108,7 +108,7 @@
 }
 
 .promo__link {
-  font-family: 'NotoSans-SemiBold', 'Arial', sans-serif;
+  font-family: "NotoSans-SemiBold", "Arial", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
@@ -135,7 +135,7 @@
 }
 
 .promo__button-text {
-  font-family: 'NotoSans-SemiBold', 'Arial', sans-serif;
+  font-family: "NotoSans-SemiBold", "Arial", sans-serif;
   font-size: 10px;
   line-height: 14px;
   letter-spacing: 0.04em;
